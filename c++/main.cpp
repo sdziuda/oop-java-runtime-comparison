@@ -44,7 +44,7 @@ int main() {
     int count = 0;
 
     for (int i = 0; i < N; i++) {
-        int number = rand() % M + 5;
+        int number = rand() % (M - 6) + 5;
         if (number % 2 == 1) number++;
 
         int partOfSum = getPartOfSum(number);

@@ -10,7 +10,7 @@ public class Main {
         int count = 0;
 
         for (int i = 0; i < N; i++) {
-            int number = new Random().nextInt(M) + 5;
+            int number = new Random().nextInt(M - 6) + 5;
             if (number % 2 == 1) number++;
 
             final var partOfSum = getPartOfSum(number);
