@@ -1,7 +1,7 @@
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
-#define N 500
+#define N 10000000
 #define M 1000000000
 
 using namespace std;

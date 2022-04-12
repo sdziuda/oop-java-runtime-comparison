@@ -2,8 +2,8 @@ import java.util.Random;
 
 public class Main {
 
-    private static final int N = 500;
-    private static final int M = 1000000000;
+    private static final int N = 10000000;
+    private static final int M = 1000;
     private static final boolean[] isPrime = sieve();
 
     public static void main(String[] args) {
