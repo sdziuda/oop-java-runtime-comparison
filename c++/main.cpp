@@ -1,4 +1,5 @@
 #include <iostream>
+
 #define N 1000000
 #define M 1000000000
 
