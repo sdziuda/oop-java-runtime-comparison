@@ -23,6 +23,10 @@ public class Main {
         System.out.println(count + " out of " + N + " passed");
     }
 
+    /**
+     * @param max the maximum number to check
+     * @return an array of booleans indicating whether each number is prime
+     */
     private static boolean[] sieve(int max) {
         boolean[] isPrime = new boolean[max + 1];
 
@@ -30,6 +34,7 @@ public class Main {
             isPrime[i] = true;
         }
 
+        // Worth noting: we are only checking up to the square root of max.
         for (int i = 2; i * i <= max; i++) {
             if (isPrime[i]) {
                 for (int j = i * i; j <= max; j += i) {
@@ -41,6 +46,11 @@ public class Main {
         return isPrime;
     }
 
+    /**
+     * Returns the part of the sum of the two numbers if both parts are prime and sum up to the number.
+     * @param number the number to check
+     * @return one of the two parts of the sum or 0 if none exists
+     */
     private static int getPartOfSum(int number) {
         for (int i = 2; i < number / 2 + 1; i++) {
             if (isPrime[i] && isPrime[number - i]) {
