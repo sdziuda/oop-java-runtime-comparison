@@ -1,17 +1,17 @@
-import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 
-    private static final int N = 10000000;
-    private static final int M = 1000;
+    private static final int N = 1000000;
+    private static final int M = 1000000000;
     private static final boolean[] isPrime = sieve();
 
     public static void main(String[] args) {
         int count = 0;
+        Scanner scanner = new Scanner(System.in);
 
         for (int i = 0; i < N; i++) {
-            int number = new Random().nextInt(M - 6) + 5;
-            if (number % 2 == 1) number++;
+            int number = scanner.nextInt();
 
             final var partOfSum = getPartOfSum(number);
             if (partOfSum != 0) {

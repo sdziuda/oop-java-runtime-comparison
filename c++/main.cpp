@@ -1,7 +1,5 @@
 #include <iostream>
-#include <ctime>
-#include <cstdlib>
-#define N 10000000
+#define N 1000000
 #define M 1000000000
 
 using namespace std;
@@ -40,12 +38,11 @@ static int getPartOfSum(int number) {
 
 int main() {
     sieve();
-    srand(time(NULL));
     int count = 0;
 
     for (int i = 0; i < N; i++) {
-        int number = rand() % (M - 6) + 5;
-        if (number % 2 == 1) number++;
+        int number;
+        cin >> number;
 
         int partOfSum = getPartOfSum(number);
         if (partOfSum != 0) {
