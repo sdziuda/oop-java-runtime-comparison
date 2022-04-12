@@ -11,7 +11,7 @@
   Potem generuje N losowych parzystych liczb z przedziału [6, M] i dla każdej znajduje podział na dwie liczby pierwsze,
   które się do niej sumują. 
 
-  Pełny opis zadania (na którym bazowałem się pisząc ten program) znajduje się w pliku goldbachs_conjecture.pdf.
+  Pełny opis zadania (na którym bazowałem się pisząc ten program) znajduje się w pliku <a href="https://github.com/sdziuda/oop-java-runtime-comparison/blob/main/goldbachs_conjecture.pdf">goldbachs_conjecture.pdf</a>.
 ## Opcje kompilacji
   * javac Main.java
   * g++ main.cpp -o main
